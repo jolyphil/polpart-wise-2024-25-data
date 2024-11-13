@@ -39,8 +39,13 @@ bwl_results <- bwl_results_raw %>%
                            state == 14 ~ "SN",
                            state == 15 ~ "ST",
                            state == 16 ~ "TH"),
-         state = factor(state)) %>%
+         state = factor(state),
+         region = case_when(state == "BE" ~ "Berlin",
+                            state %in% c("BB", "MV", "SN", "ST", "TH") ~ "East",
+                            TRUE ~ "West"),
+         region = factor(region, levels = c("West", "East", "Berlin"))) %>%
   select(state,
+         region,
          district_num,
          district_name,
          turnout)
@@ -70,6 +75,7 @@ bwl <- bwl_results %>%
 # Add variable labels -----------------------------------------------------
 
 attr(bwl$state, "label") <- "Federal state"
+attr(bwl$region, "label") <- "Region"
 attr(bwl$district_num, "label") <- "Electoral district number"
 attr(bwl$district_name, "label") <- "Electoral district name"
 attr(bwl$turnout, "label") <- "Voter turnout"
