@@ -16,13 +16,13 @@ seat_n <- c(207,
             28,
             10,
             9)
-leader <- c("Rolf Mützenich",
-            "Friedrich Merz",
-            "Katharina Dröge; Britta Haßelmann",
-            "Christian Dürr",
-            "Alice Weidel; Tino Chrupalla",
-            "Heidi Reichinnek; Sören Pellmann",
-            "Sahra Wagenknecht", 
+leader <- c("R. Mützenich",
+            "F. Merz",
+            "K. Dröge; B. Haßelmann",
+            "C. Dürr",
+            "A. Weidel; T. Chrupalla",
+            "H. Reichinnek; S. Pellmann",
+            "S. Wagenknecht", 
             NA)
 
 bt <- data.frame(party, seat_n, leader) |> 
