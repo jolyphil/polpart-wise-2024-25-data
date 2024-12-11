@@ -80,10 +80,10 @@ issp <- issp_raw |>
                                                 "Russia",
                                                 "Slovakia",
                                                 "Slovenia"),
-                                 "postcommunist",
-                                 "not postcommunist"),
-         postcommunist = factor(postcommunist, levels = c("not postcommunist", 
-                                                          "postcommunist")))
+                                 "Yes",
+                                 "No"),
+         postcommunist = factor(postcommunist, levels = c("No", 
+                                                          "Yes")))
 
 # Import World Bank Data --------------------------------------------------
 
