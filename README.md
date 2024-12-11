@@ -4,16 +4,24 @@ This repository contains raw data on political participation and scripts to tran
 
 ## Raw data
 
-**European Social Survey (ESS), Round 11**
-
-- CSV version: [`data_raw/ess_11/ESS11.csv`](data_raw/ess_11/ESS11.csv)
-
-**Data from the Bundeswahlleiterin on the 2021 German federal election**
+**Bundeswahlleiterin**, data on the 2021 German federal election**
 
 - Results, CSV version: [`data_raw/bwl_btw_2021/kerg.csv`](data_raw/bwl_btw_2021/kerg.csv)
 - Contextual data, CSV version: [`data_raw/bwl_btw_2021/btw21_strukturdaten.csv`](data_raw/bwl_btw_2021/btw21_strukturdaten.csv)
 
-**Country-level data from Vrablikova (2014)**
+**European Social Survey (ESS)**, Round 11
+
+- CSV version: [`data_raw/ess_11/ESS11.csv`](data_raw/ess_11/ESS11.csv)
+
+**International Social Survey Programme**, Citizenship II - ISSP 2014
+
+- Stata version: [`data_raw/issp_2014/ZA6670_v2-0-0.dta`](data_raw/issp_2014/ZA6670_v2-0-0.dta)
+
+**Varieties of democracy**, Country-Year: V-Dem Core
+
+- RDS version: [`data_raw/vdem/V-Dem-CY-Core-v14.rds`](data_raw/vdem/V-Dem-CY-Core-v14.rds)
+
+**Vrablikova (2014)**, country-level data
 
 - TSV version: [`data_raw/vrablikova_2014/vrablikova_2014_appendix_a.tsv`](data_raw/vrablikova_2014/vrablikova_2014_appendix_a.tsv)
 
@@ -34,3 +42,8 @@ This repository contains raw data on political participation and scripts to tran
 
 - Clean data: [`data/2024-11-14_vrablikova_2014.rds`](data/2024-11-14_vrablikova_2014.rds)
 - Script: [`data_raw/vrablikova_2014/2024-11-14_vrablikova_2014_data_preparation.R`](data_raw/vrablikova_2014/2024-11-14_vrablikova_2014_data_preparation.R)
+
+2024-12-12: **International Social Survey Programme: Citizenship II - ISSP 2014**, aggregated at the country level and combined with indicators from the World Bank and the V-Dem Institute
+
+- Clean data: [`data/2024-12-12_issp.rds`](data/2024-12-12_issp.rds)
+- Script: [`data_raw/issp_2014/2024-12-12_issp_data_preparation.R`](data_raw/issp_2014/2024-12-12_issp_data_preparation.R)
