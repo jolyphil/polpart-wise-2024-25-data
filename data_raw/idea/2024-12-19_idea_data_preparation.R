@@ -56,15 +56,14 @@ vdem <- vdem_raw |>
                                             "Electoral democracy",
                                             "Liberal democracy")),
          
-         voting_age = factor(voting_age),
+         voting_age = factor(voting_age, levels = c("16", "17", "18")),
          
          elect_system = case_when(elect_system == 0 ~ "Majoritarian",
                                   elect_system == 1 ~ "Proportional",
                                   elect_system == 2 ~ "Mixed"),
          elect_system = factor(elect_system, levels = c("Majoritarian",
                                                         "Proportional",
-                                                        "Mixed",
-                                                        "Other")),
+                                                        "Mixed")),
          
          compul_voting = case_when(compul_voting == 0 ~ "No",
                                    compul_voting %in% 2:4 ~ "Yes",
