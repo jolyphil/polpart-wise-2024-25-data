@@ -1,4 +1,4 @@
-library(countrycode)
+library(countrycode) # Harmonize country codes for merge
 library(dplyr)
 library(readxl)
 library(wbstats) # Import World Bank Data
@@ -31,9 +31,6 @@ idea <- idea_raw |>
 
 
 # Import V-Dem Data -------------------------------------------------------
-
-# v2x_polyarchy: Electoral democracy index
-# v2x_corr: Corruption index
 
 vdem_raw <- readRDS("data_raw/vdem/V-Dem-CY-Full+Others-v14.rds")
 
@@ -82,7 +79,7 @@ indicators <- c(
   "NY.GDP.PCAP.PP.KD",   # GDP per capita, PPP (constant 2017 international $)
   "SL.UEM.TOTL.ZS",      # Unemployment, total (% of total labor force)
   "IT.NET.USER.ZS",      # Individuals using the Internet (% of population)
-  "SP.POP.TOTL"
+  "SP.POP.TOTL"          # Total population
 )
 
 wb_raw <- wb_data(indicator = indicators, 
@@ -112,7 +109,7 @@ swiid_raw <- temp_env$swiid_summary
 swiid <- swiid_raw |> 
   mutate(ccode = countrycode(country,
                              origin = "country.name",
-                             destination = "iso3c")) |> 
+                             destination = "iso3c")) |> # Harmonize country code
   select(ccode, 
          year,
          gini = gini_disp)

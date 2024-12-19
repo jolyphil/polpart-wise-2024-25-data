@@ -13,13 +13,21 @@ This repository contains raw data on political participation and scripts to tran
 
 - CSV version: [`data_raw/ess_11/ESS11.csv`](data_raw/ess_11/ESS11.csv)
 
+**International IDEA voter turnout data base**
+
+- XLS version: [`data_raw/idea/idea_parliamentary_turnout.xls`](data_raw/idea/idea_parliamentary_turnout.xls)
+
 **International Social Survey Programme**, Citizenship II - ISSP 2014
 
 - Stata version: [`data_raw/issp_2014/ZA6670_v2-0-0.dta`](data_raw/issp_2014/ZA6670_v2-0-0.dta)
 
-**Varieties of democracy**, Country-Year: V-Dem Core
+**Standardized World Income Inequality Database (SWIID)**
 
-- RDS version: [`data_raw/vdem/V-Dem-CY-Core-v14.rds`](data_raw/vdem/V-Dem-CY-Core-v14.rds)
+- RDA version: [`data_raw/swiid/swiid9_7.rda`](data_raw/swiid/swiid9_7.rda)
+
+**Varieties of democracy**, Country-Year: V-Dem Full+Others
+
+- RDS version: [`data_raw/vdem/V-Dem-CY-Full+Others-v14.rds`](data_raw/vdem/V-Dem-CY-Full+Others-v14.rds)
 
 **Vrablikova (2014)**, country-level data
 
@@ -47,3 +55,9 @@ This repository contains raw data on political participation and scripts to tran
 
 - Clean data: [`data/2024-12-12_issp.rds`](data/2024-12-12_issp.rds)
 - Script: [`data_raw/issp_2014/2024-12-12_issp_data_preparation.R`](data_raw/issp_2014/2024-12-12_issp_data_preparation.R)
+
+2024-12-19: **International IDEA voter turnout data base**, combined with indicators from the V-Dem Institute, the World Bank, and the SWIID
+
+- Clean data: [`data/2024-12-19_idea.rds`](data/2024-12-19_idea.rds)
+- Script: [`data_raw/idea/2024-12-19_idea_data_preparation.R`](data_raw/idea/2024-12-19_idea_data_preparation.R)
+
