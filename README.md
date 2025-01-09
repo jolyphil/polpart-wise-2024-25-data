@@ -13,6 +13,10 @@ This repository contains raw data on political participation and scripts to tran
 
 - CSV version: [`data_raw/ess_11/ESS11.csv`](data_raw/ess_11/ESS11.csv)
 
+**Immigrant German Election Study (IMGES)**
+
+- SPSS version: [`data_raw/imges/ZA7495_en_v2-0-0.sav`](data_raw/imges/ZA7495_en_v2-0-0.sav)
+
 **International IDEA voter turnout data base**
 
 - XLS version: [`data_raw/idea/idea_parliamentary_turnout.xls`](data_raw/idea/idea_parliamentary_turnout.xls)
@@ -61,3 +65,12 @@ This repository contains raw data on political participation and scripts to tran
 - Clean data: [`data/2024-12-19_idea.rds`](data/2024-12-19_idea.rds)
 - Script: [`data_raw/idea/2024-12-19_idea_data_preparation.R`](data_raw/idea/2024-12-19_idea_data_preparation.R)
 
+2025-01-09: **European Social Survey (ESS)**, Round 11, Germany
+
+- Clean data: [`data/2025-01-09_ess_11.rds`](data/2025-01-09_ess_11.rds)
+- Script: [`data_raw/ess_11/2025-01-09_ess_11_data_preparation.R`](data_raw/ess_11/2025-01-09_ess_11_data_preparation.R)
+
+2025-01-09: **Immigrant German Election Study (IMGES)**
+
+- Clean data: [`data/2025-01-09_imges.rds`](data/2025-01-09_imges.rds)
+- Script: [`data_raw/imges/2025-01-09_imges_data_preparation.R`](data_raw/imges/2025-01-09_imges_data_preparation.R)
