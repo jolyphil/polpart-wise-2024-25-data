@@ -37,11 +37,6 @@ vdem <- vdem_raw |>
   filter(year >= 2014) |> 
   select(iso3c = country_text_id, 
          year, 
-         democracy = v2x_polyarchy, 
-         corruption = v2x_corr,
-         voting_age = v2elage,
-         compul_voting = v2elcomvot,
-         elect_system = v2elparlel,
          regime = v2x_regime) |> 
   mutate(regime = case_when(regime == 0 ~ "Closed autocracy",
                             regime == 1 ~ "Electoral autocracy",
@@ -50,25 +45,7 @@ vdem <- vdem_raw |>
          regime = factor(regime, levels = c("Closed autocracy",
                                             "Electoral autocracy",
                                             "Electoral democracy",
-                                            "Liberal democracy")),
-         
-         voting_age = factor(voting_age, levels = c("16", "17", "18")),
-         
-         elect_system = case_when(elect_system == 0 ~ "Majoritarian",
-                                  elect_system == 1 ~ "Proportional",
-                                  elect_system == 2 ~ "Mixed"),
-         elect_system = factor(elect_system, levels = c("Majoritarian",
-                                                        "Proportional",
-                                                        "Mixed")),
-         
-         compul_voting = case_when(compul_voting == 0 ~ "No",
-                                   compul_voting %in% 2:4 ~ "Yes",
-                                   iso3c == "ARG" ~ "Yes",
-                                   iso3c == "CRI" ~ "No",
-                                   iso3c == "GRC" ~ "No",
-                                   iso3c == "PAN" ~ "No"
-                                   ),
-         compul_voting = factor(compul_voting))
+                                            "Liberal democracy")))
 
 # Merge datasets ----------------------------------------------------------
 
