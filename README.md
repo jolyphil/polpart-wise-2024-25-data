@@ -74,3 +74,8 @@ This repository contains raw data on political participation and scripts to tran
 
 - Clean data: [`data/2025-01-09_imges.rds`](data/2025-01-09_imges.rds)
 - Script: [`data_raw/imges/2025-01-09_imges_data_preparation.R`](data_raw/imges/2025-01-09_imges_data_preparation.R)
+
+2025-01-30: **European Social Survey (ESS)**, Round 11, Germany
+
+- Clean data: [`data/2025-01-30_ess_11.rds`](data/2025-01-30_ess_11.rds)
+- Script: [`data_raw/ess_11/2025-01-30_ess_11_data_preparation.R`](data_raw/ess_11/2025-01-30_ess_11_data_preparation.R)
